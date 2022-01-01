@@ -1,7 +1,9 @@
 {
   "name": "emerald-jekyll",
   "version": "1.0.0",
-  "description": "desc",
+  "description": "An adaptation of the Emerald theme for Jekyll.",
+  "author": "Kyle Huggins (http://huggins.io/)",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build:jekyll": "bundle exec jekyll build",
@@ -12,12 +14,6 @@
     "dev:tailwind": "npm run build:tailwind -- --watch",
     "husky:precommit": "npm run build:tailwind"
   },
-  "repository": {
-    "type": "git",
-    "url": "emerald"
-  },
-  "author": "Kyle Huggins (http://huggins.io/)",
-  "license": "MIT",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",
     "concurrently": "~6.5.1",
