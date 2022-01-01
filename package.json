@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "build:jekyll": "bundle exec jekyll build",
-    "build:tailwind": "npx tailwindcss -i ./css/_tailwind.css -o ./css/global.css",
+    "build:tailwind": "npx tailwindcss -i ./css/_tailwind.css -o ./assets/css/global.css",
     "clean": "bundle exec jekyll clean",
     "dev": "concurrently -n tail,jkyl npm:dev:tailwind npm:dev:jekyll",
     "dev:jekyll": "bundle exec jekyll serve --incremental",
