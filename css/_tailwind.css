@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html {
+  @apply bg-white dark:bg-black text-black dark:text-white;
+}
+
+::selection {
+  @apply bg-accent-500 text-white dark:bg-green-200 dark:text-black;
+}
+
+@layer components {
+  .autoprose {
+    @apply prose dark:prose-invert prose-gray prose-pre:rounded-none;
+  }
+
+  .text-dynamic-h0 {
+    @apply text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  .text-dynamic-h1 {
+    @apply text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .bg-blurred {
+    @apply backdrop-blur backdrop-saturate-150;
+  }
+}

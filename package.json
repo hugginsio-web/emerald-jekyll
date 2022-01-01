@@ -1,0 +1,27 @@
+{
+  "name": "emerald-jekyll",
+  "version": "1.0.0",
+  "description": "desc",
+  "private": true,
+  "scripts": {
+    "build:jekyll": "bundle exec jekyll build",
+    "build:tailwind": "npx tailwindcss -i ./css/_tailwind.css -o ./css/global.css",
+    "clean": "bundle exec jekyll clean",
+    "dev": "concurrently -n tail,jkyl npm:dev:tailwind npm:dev:jekyll",
+    "dev:jekyll": "bundle exec jekyll serve --incremental",
+    "dev:tailwind": "npm run build:tailwind -- --watch",
+    "husky:precommit": "npm run build:tailwind"
+  },
+  "repository": {
+    "type": "git",
+    "url": "emerald"
+  },
+  "author": "Kyle Huggins (http://huggins.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "concurrently": "~6.5.1",
+    "husky": "~7.0.4",
+    "tailwindcss": "~3.0.8"
+  }
+}

@@ -1,0 +1,15 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title | default: site.title }}</title>
+
+  <meta name="og:title" content="{{ page.title | default: site.title }}" />
+  <meta name="description" content="{{ page.excerpt | default: site.description }}" />
+  <meta name="og:description" content="{{ page.excerpt | default: site.description }}" />
+
+  <meta charset="utf-8" />
+  <meta httpEquiv="Content-Language" content="en" />
+
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+</head>
