@@ -1,0 +1,7 @@
+github:
+  is_project_page: true
+  owner_name: "kjhx"
+  owner_url: "https://github.com/kjhx"
+  project_tagline: "An adaptation of the Emerald theme for Jekyll."
+  repository_name: "emerald"
+  repository_url: "https://github.com/hugginsio/emerald-jekyll"

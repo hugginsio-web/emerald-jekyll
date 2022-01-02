@@ -100,7 +100,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://unsplash.com/photos/VStfZbDYgNo/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8dW5zcGxhc2h8fDB8fHx8MTY0MTA3OTY3OA&force=true&w=1920)
 
 
 ### Definition lists can be used with HTML syntax.

@@ -3,6 +3,9 @@
   <body class="h-full">
     <div class="flex flex-col min-h-full border-t-2 border-black dark:border-white">
       {% include header.html %}
+      {% if site.github.is_project_page %}
+        {% include github-shard.html %}
+      {% endif %}
       <main class="flex-grow text-dynamic-p w-full min-h-full px-3">
         <div class="max-w-xl mx-auto pt-3">
           <article class="autoprose">{{ content }}</article>

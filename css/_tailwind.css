@@ -21,8 +21,16 @@ html {
 }
 
 @layer components {
+  .standard-link {
+    @apply hover:text-accent-400 dark:hover:text-accent-500 transition-colors duration-200;
+  }
+
   .autoprose {
-    @apply prose dark:prose-invert prose-gray prose-pre:rounded-none;
+    @apply prose prose-base dark:prose-invert prose-gray prose-img:rounded-md prose-a:standard-link;
+  }
+
+  div.highlighter-rouge > div {
+    @apply bg-gray-900 dark:bg-slate-600 rounded-md;
   }
 
   .text-dynamic-h0 {
